@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design/css/default.css" />
+    <title>Formulaires</title>
+  </head>
+
+  <body>
+
+    <div class="formulaires">
+
+      
+
+      <form>
+        
+        <h1>Mise à jour de vos informations</h1>
+            
+        <label for="CSP">CSP (catégorie socioprofessionelle)</label>
+        <select id="CSP" name="CSP" class="form">
+          <option value="">Cadre de la fonction publique, professions intellectuelles, artistes</option>
+        </select>
+
+        <label for="profession">Profession</label>
+        <select id="profession" name="profession" class="form">
+            <option value="">Professeur</option>
+          </select>
+
+        <label for="revenus">Revenus</label>
+        <input type="text" id="revenus" name="revenus" class="form" value="32 000   €/an"/>
+
+        <label for="patrimoine">Patrimoine (immobilier et financier hors LCL)</label>
+        <input type="text" id="patrimoine" name="patrimoine" class="form" value="600 000   €"/>
+
+        <div class="div-bouton">
+        <button type="button" class="cancel-btn">Pas maintenant</button>
+        <button type="submit" class="valider-btn">Valider</button>
+        </div>
+        
+      </form>
+
+    </div>
+  </body>
+</html>

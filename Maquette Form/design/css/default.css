@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.formulaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.formulaires h1 {
+  color: blue;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+.formulaires form {
+  display: flex;
+  flex-direction: column;
+}
+.formulaires form select {
+  padding: 1em 15em 1em 1.6em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  color: blue;
+  font-weight: bold;
+  background-color: white;
+}
+.formulaires form select:focus {
+  outline: none;
+}
+.formulaires form input {
+  padding: 1em 15em 1em 1.6em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  color: blue;
+  font-weight: bold;
+  border: gray 1px solid;
+}
+.formulaires form input:focus {
+  outline: none;
+}
+.formulaires form label {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+.formulaires form .div-bouton {
+  margin-top: 4em;
+  text-align: center;
+}
+.formulaires form .div-bouton .cancel-btn {
+  font-weight: bold;
+  border: 1px solid grey;
+  padding: 1em 3em;
+  border-radius: 1.5em;
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+}
+.formulaires form .div-bouton .valider-btn {
+  font-weight: bold;
+  border: 1px solid grey;
+  padding: 1em 3em;
+  border-radius: 1.5em;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=default.css.map */

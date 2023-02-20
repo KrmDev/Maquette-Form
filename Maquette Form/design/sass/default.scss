@@ -1,0 +1,86 @@
+@mixin googleFonts($nomDeLaPolice) {
+  @import url("https://fonts.googleapis.com/css2?family=" + $nomDeLaPolice + "&display=swap");
+}
+
+@mixin form-style {
+  padding: 1em 15em 1em 1.6em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  color: blue;
+  font-weight: bold;
+}
+
+@mixin bouton-style {
+    font-weight: bold;
+    border: 1px solid grey;
+    padding: 1em 3em;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+@include googleFonts("Poppins");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.formulaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h1 {
+    color: blue;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    select {
+      @include form-style();
+      background-color: white;
+      &:focus {
+        // Pour enlever les bordures en quand l'utilisateur clique :
+        outline: none;
+      }
+    }
+    input {
+      @include form-style();
+      border: gray 1px solid;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    label {
+      font-size: 1em;
+      margin-top: 1em;
+      margin-bottom: 0.3em;
+    }
+
+    .div-bouton {
+      margin-top: 4em;
+      text-align: center;
+      .cancel-btn {
+        @include bouton-style();
+        background-color: white;
+        color: blue;
+      }
+      .valider-btn {
+        @include bouton-style();
+        background-color: blue;
+        color: white;
+      }
+    }
+  }
+}
