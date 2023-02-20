@@ -1,0 +1,24 @@
+@media (max-width: 950px) {
+    
+    @mixin form-style {
+        padding: 1em 10em 1em 1.6em; 
+    }
+
+    form {
+        select {
+            @include form-style();
+            background-color: white;
+            &:focus {
+              // Pour enlever les bordures en quand l'utilisateur clique :
+              outline: none;
+            }
+          }
+          input {
+            @include form-style();
+            border: gray 1px solid;
+            &:focus {
+              outline: none;
+            }
+          }
+    }
+  }

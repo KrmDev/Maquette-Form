@@ -28,7 +28,7 @@ body {
 .formulaires form select {
   padding: 1em 15em 1em 1.6em;
   font-size: 1em;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
   color: blue;
   font-weight: bold;
   background-color: white;
@@ -39,7 +39,7 @@ body {
 .formulaires form input {
   padding: 1em 15em 1em 1.6em;
   font-size: 1em;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
   color: blue;
   font-weight: bold;
   border: gray 1px solid;
@@ -73,6 +73,23 @@ body {
   cursor: pointer;
   background-color: blue;
   color: white;
+}
+
+@media (max-width: 950px) {
+  form select {
+    padding: 1em 10em 1em 1.6em;
+    background-color: white;
+  }
+  form select:focus {
+    outline: none;
+  }
+  form input {
+    padding: 1em 10em 1em 1.6em;
+    border: gray 1px solid;
+  }
+  form input:focus {
+    outline: none;
+  }
 }
 
 /*# sourceMappingURL=default.css.map */
