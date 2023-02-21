@@ -1,24 +1,273 @@
 @media (max-width: 950px) {
-    
-    @mixin form-style {
-        padding: 1em 10em 1em 1.6em; 
-    }
+  @mixin form-style {
+    padding: 1em 10em 1em 1em;
+  }
 
+  .formulaires {
     form {
-        select {
-            @include form-style();
-            background-color: white;
-            &:focus {
-              // Pour enlever les bordures en quand l'utilisateur clique :
-              outline: none;
-            }
-          }
-          input {
-            @include form-style();
-            border: gray 1px solid;
-            &:focus {
-              outline: none;
-            }
-          }
+      select {
+        @include form-style();
+        background-color: white;
+        &:focus {
+          // Pour enlever les bordures en quand l'utilisateur clique :
+          outline: none;
+        }
+      }
+      input {
+        @include form-style();
+        border: gray 1px solid;
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
+}
+
+@media (max-width: 800px) {
+  @mixin form-style {
+    padding: 1em 5em 1em 0.7em;
+  }
+
+  .formulaires {
+    form {
+      select {
+        @include form-style();
+        background-color: white;
+        &:focus {
+          // Pour enlever les bordures en quand l'utilisateur clique :
+          outline: none;
+        }
+      }
+      input {
+        @include form-style();
+        border: gray 1px solid;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  @mixin form-style {
+    padding: 1em 1em 1em 0.6em;
+    font-size: 0.95em;
+  }
+
+  .formulaires {
+    form {
+      select {
+        @include form-style();
+        background-color: white;
+        &:focus {
+          // Pour enlever les bordures en quand l'utilisateur clique :
+          outline: none;
+        }
+      }
+      input {
+        @include form-style();
+        border: gray 1px solid;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  @mixin form-style {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.85em;
+  }
+
+  .formulaires {
+    form {
+      select {
+        @include form-style();
+        background-color: white;
+        &:focus {
+          // Pour enlever les bordures en quand l'utilisateur clique :
+          outline: none;
+        }
+      }
+      input {
+        @include form-style();
+        border: gray 1px solid;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  @mixin form-style {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.75em;
+  }
+
+  .formulaires {
+    h1 {
+    font-size: 1.35em;
+    }
+    form {
+      select {
+        @include form-style();
+        background-color: white;
+        &:focus {
+          // Pour enlever les bordures en quand l'utilisateur clique :
+          outline: none;
+        }
+      }
+      input {
+        @include form-style();
+        border: gray 1px solid;
+        &:focus {
+          outline: none;
+        }
+      }
+      .div-bouton {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+
+        .cancel-btn {
+          @include bouton-style();
+          background-color: white;
+          color: blue;
+          margin-bottom: 1em
+        }
+        .valider-btn {
+          @include bouton-style();
+          background-color: blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 445px) {
+  @mixin form-style {
+    padding: 1em 0.9em 1em 0.9em;
+    font-size: 0.7em;
+  }
+  @mixin bouton-style {
+    font-size: 0.75em;
+}
+
+  .formulaires {
+    h1 {
+    font-size: 1.2em;
+    }
+    form {
+      label {
+        font-size: 0.9em;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+      }
+      select {
+        @include form-style();
+        background-color: white;
+        &:focus {
+          // Pour enlever les bordures en quand l'utilisateur clique :
+          outline: none;
+        }
+      }
+      input {
+        @include form-style();
+        border: gray 1px solid;
+        &:focus {
+          outline: none;
+        }
+      }
+      .div-bouton {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+
+        .cancel-btn {
+          @include bouton-style();
+          background-color: white;
+          color: blue;
+          margin-bottom: 1em
+        }
+        .valider-btn {
+          @include bouton-style();
+          background-color: blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  @mixin form-style {
+    padding: 1em 0.6em 1em 0.6em;
+    font-size: 0.55em;
+  }
+  @mixin bouton-style {
+    font-size: 0.65em;
+}
+
+  .formulaires {
+    h1 {
+    font-size: 1em;
+    }
+    form {
+      label {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+      }
+      select {
+        @include form-style();
+        background-color: white;
+        &:focus {
+          // Pour enlever les bordures en quand l'utilisateur clique :
+          outline: none;
+        }
+      }
+      input {
+        @include form-style();
+        border: gray 1px solid;
+        &:focus {
+          outline: none;
+        }
+      }
+      .div-bouton {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+
+        .cancel-btn {
+          @include bouton-style();
+          background-color: white;
+          color: blue;
+          margin-bottom: 1em
+        }
+        .valider-btn {
+          @include bouton-style();
+          background-color: blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// TAILLE MIN POUR LE SITE 320PX !
+
+
+
+
+
+

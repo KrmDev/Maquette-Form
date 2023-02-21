@@ -76,19 +76,203 @@ body {
 }
 
 @media (max-width: 950px) {
-  form select {
-    padding: 1em 10em 1em 1.6em;
+  .formulaires form select {
+    padding: 1em 10em 1em 1em;
     background-color: white;
   }
-  form select:focus {
+  .formulaires form select:focus {
     outline: none;
   }
-  form input {
-    padding: 1em 10em 1em 1.6em;
+  .formulaires form input {
+    padding: 1em 10em 1em 1em;
     border: gray 1px solid;
   }
-  form input:focus {
+  .formulaires form input:focus {
     outline: none;
+  }
+}
+@media (max-width: 800px) {
+  .formulaires form select {
+    padding: 1em 5em 1em 0.7em;
+    background-color: white;
+  }
+  .formulaires form select:focus {
+    outline: none;
+  }
+  .formulaires form input {
+    padding: 1em 5em 1em 0.7em;
+    border: gray 1px solid;
+  }
+  .formulaires form input:focus {
+    outline: none;
+  }
+}
+@media (max-width: 680px) {
+  .formulaires form select {
+    padding: 1em 1em 1em 0.6em;
+    font-size: 0.95em;
+    background-color: white;
+  }
+  .formulaires form select:focus {
+    outline: none;
+  }
+  .formulaires form input {
+    padding: 1em 1em 1em 0.6em;
+    font-size: 0.95em;
+    border: gray 1px solid;
+  }
+  .formulaires form input:focus {
+    outline: none;
+  }
+}
+@media (max-width: 600px) {
+  .formulaires form select {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.85em;
+    background-color: white;
+  }
+  .formulaires form select:focus {
+    outline: none;
+  }
+  .formulaires form input {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.85em;
+    border: gray 1px solid;
+  }
+  .formulaires form input:focus {
+    outline: none;
+  }
+}
+@media (max-width: 510px) {
+  .formulaires h1 {
+    font-size: 1.35em;
+  }
+  .formulaires form select {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.75em;
+    background-color: white;
+  }
+  .formulaires form select:focus {
+    outline: none;
+  }
+  .formulaires form input {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.75em;
+    border: gray 1px solid;
+  }
+  .formulaires form input:focus {
+    outline: none;
+  }
+  .formulaires form .div-bouton {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+  }
+  .formulaires form .div-bouton .cancel-btn {
+    font-weight: bold;
+    border: 1px solid grey;
+    padding: 1em 3em;
+    border-radius: 1.5em;
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+    margin-bottom: 1em;
+  }
+  .formulaires form .div-bouton .valider-btn {
+    font-weight: bold;
+    border: 1px solid grey;
+    padding: 1em 3em;
+    border-radius: 1.5em;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+}
+@media (max-width: 445px) {
+  .formulaires h1 {
+    font-size: 1.2em;
+  }
+  .formulaires form label {
+    font-size: 0.9em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+  }
+  .formulaires form select {
+    padding: 1em 0.9em 1em 0.9em;
+    font-size: 0.7em;
+    background-color: white;
+  }
+  .formulaires form select:focus {
+    outline: none;
+  }
+  .formulaires form input {
+    padding: 1em 0.9em 1em 0.9em;
+    font-size: 0.7em;
+    border: gray 1px solid;
+  }
+  .formulaires form input:focus {
+    outline: none;
+  }
+  .formulaires form .div-bouton {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+  }
+  .formulaires form .div-bouton .cancel-btn {
+    font-size: 0.75em;
+    background-color: white;
+    color: blue;
+    margin-bottom: 1em;
+  }
+  .formulaires form .div-bouton .valider-btn {
+    font-size: 0.75em;
+    background-color: blue;
+    color: white;
+  }
+}
+@media (max-width: 410px) {
+  .formulaires h1 {
+    font-size: 1em;
+  }
+  .formulaires form label {
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+  }
+  .formulaires form select {
+    padding: 1em 0.6em 1em 0.6em;
+    font-size: 0.55em;
+    background-color: white;
+  }
+  .formulaires form select:focus {
+    outline: none;
+  }
+  .formulaires form input {
+    padding: 1em 0.6em 1em 0.6em;
+    font-size: 0.55em;
+    border: gray 1px solid;
+  }
+  .formulaires form input:focus {
+    outline: none;
+  }
+  .formulaires form .div-bouton {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+  }
+  .formulaires form .div-bouton .cancel-btn {
+    font-size: 0.65em;
+    background-color: white;
+    color: blue;
+    margin-bottom: 1em;
+  }
+  .formulaires form .div-bouton .valider-btn {
+    font-size: 0.65em;
+    background-color: blue;
+    color: white;
   }
 }
 
